@@ -1,0 +1,15 @@
+# AI and audio packages
+torch                             # PyTorch: backend for Whisper and Transformers
+ffmpeg-python                     # For audio conversion and processing
+openai-whisper @ git+https://github.com/openai/whisper.git           # Whisper transcription model
+
+# NLP pipelines
+transformers                      # Hugging Face Transformers (for sentiment + NER)
+
+# Audio and speech
+pygame                            # For audio playback
+pyttsx3                           # Optional offline TTS (if not using gTTS)
+gTTS                              # Google Text-to-Speech (online TTS)
+
+# General
+numpy                             # Used by Whisper and PyTorch
