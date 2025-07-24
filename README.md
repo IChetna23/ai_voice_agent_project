@@ -1,7 +1,7 @@
 # ai_voice_agent_project
 Voice AI Agent for Telephonic screening of Candidates - This is an automated calling agent that is capable of asking general screening questions like: Basic Introduction, Skillset, experience, etc. The agent transcribes, analyzes, reasons, and screens-in the candidates based on their responses
 
-**Features**
+**Features:**
 
 Voice-based HR Questioning using **gTTS** and **pygame**
 
@@ -27,45 +27,65 @@ Auto-respond to candidate queries
 
 Final Recommendation based on sentiment, content, and question handling
 
-**Folder Structure**
+**Folder Structure:**
 
-<pre> <code> ## 🗂️ Folder Structure ``` project-root/ ├── stimulate_call.py # Main simulation logic ├── agent_logic.py # Rule-based reasoning ├── nlp_pipeline.py # NLP pipeline using spaCy/textblob/etc. ├── sample_audio/ # Contains folders: candidate1, candidate2, candidate3 │ ├── candidate1/ │ │ ├── a1.wav │ │ ├── a2.wav │ │ └── ... │ └── candidate2/ │ └── ... └── README.md # This file ``` </code> </pre>
+project-root/
 
-**How It Works**
+│
 
-HR Agent speaks predefined questions one by one, waiting for candidate' response.
+├── stimulate_call.py                # Main simulation logic
 
-Candidate's voice reply (pre-recorded .wav) is played.
+├── agent_logic.py         # Rule-based reasoning
 
-Whisper AI transcribes the audio to text.
+├── nlp_pipeline.py        # NLP pipeline using spaCy/textblob/etc.
 
-NLP pipeline analyzes the transcript:
+├── sample_audio/          # Contains folders: candidate1, candidate2, candidate3
 
-Extracts tone and key information
+│   └── candidate1/
 
-Detects WH-questions asked by candidate
+│       ├── a1.wav
 
-Agent logic evaluates: Whether to flag, prompt, or proceed
+│       ├── a2.wav
 
-Auto-responses are triggered for candidate questions like:
+│       └── ...
 
-“What tech stack do you use?”
+└── README.md              # This file
 
-“Is this a remote role?”
+**How It Works?**
 
-**Sample Questions Asked**
+1. HR Agent speaks predefined questions one by one, waiting for candidate' response.
 
-Please introduce yourself.
+2. Candidate's voice reply (pre-recorded .wav) is played.
 
-What is your experience and skill set?
+3. Whisper AI transcribes the audio to text.
 
-Where are you currently located?
+4. NLP pipeline analyzes the transcript:
 
-Are you willing to join immediately?
+5. Extracts tone and key information
 
-Do you have any questions for us?
+6. Detects WH-questions asked by candidate
 
-**Run the Simulation (stimulate_call.py)**
+7. Agent logic evaluates: Whether to flag, prompt, or proceed
+
+8. Auto-responses are triggered for candidate questions like:
+
+   “What tech stack do you use?”
+
+   “Is this a remote role?”
+
+**Sample Questions Asked:**
+
+1. Please introduce yourself.
+
+2. What is your experience and skill set?
+
+3. Where are you currently located?
+
+4. Are you willing to join immediately?
+
+5. Do you have any questions for us?
+
+**Run the Simulation (stimulate_call.py):**
 
 1. Install Requirements
 
@@ -90,5 +110,5 @@ Hugging Face Transformers (for NLP tasks- Sentimental Analysis and NER)
 
 gTTS + Pygame (for TTS + audio)
 
-Custom rule-based logic
-keeping the content as it is just add formatting like bullets and numbers and bold heaings
+Custom rule-based logic explained via .png file
+
