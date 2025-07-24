@@ -2,6 +2,7 @@
 Voice AI Agent for Telephonic screening of Candidates - This is an automated calling agent that is capable of asking general screening questions like: Basic Introduction, Skillset, experience, etc. The agent transcribes, analyzes, reasons, and screens-in the candidates based on their responses
 
 **Features**
+
 Voice-based HR Questioning using **gTTS** and **pygame**
 
 Candidate Response Playback via pre-recorded **.wav files**
@@ -26,21 +27,12 @@ Auto-respond to candidate queries
 
 Final Recommendation based on sentiment, content, and question handling
 
-🗂️ Folder Structure
+**Folder Structure**
 
-project-root/
-│
-├── stimulate_call.py                # Main simulation logic
-├── agent_logic.py         # Rule-based reasoning
-├── nlp_pipeline.py        # NLP pipeline using spaCy/textblob/etc.
-├── sample_audio/          # Contains folders: candidate1, candidate2, candidate3
-│   └── candidate1/
-│       ├── a1.wav
-│       ├── a2.wav
-│       └── ...
-└── README.md              # This file
+<pre> <code> ## 🗂️ Folder Structure ``` project-root/ ├── stimulate_call.py # Main simulation logic ├── agent_logic.py # Rule-based reasoning ├── nlp_pipeline.py # NLP pipeline using spaCy/textblob/etc. ├── sample_audio/ # Contains folders: candidate1, candidate2, candidate3 │ ├── candidate1/ │ │ ├── a1.wav │ │ ├── a2.wav │ │ └── ... │ └── candidate2/ │ └── ... └── README.md # This file ``` </code> </pre>
 
 **How It Works**
+
 HR Agent speaks predefined questions one by one, waiting for candidate' response.
 
 Candidate's voice reply (pre-recorded .wav) is played.
@@ -73,17 +65,22 @@ Are you willing to join immediately?
 Do you have any questions for us?
 
 **Run the Simulation (stimulate_call.py)**
+
 1. Install Requirements
+
 pip install pygame gTTS openai-whisper pyttsx3
 
 2. Run the Agent
+
 python stimulate_call.py
 Then enter:
 
 Enter candidate number (e.g., 1, 2, 3): 1
+
 Make sure candidate audio files exist in sample_audio/candidate1/ as a1.wav, a2.wav, etc.
 
 **Technologies Used**
+
 Python
 
 Whisper by OpenAI (for transcription)
